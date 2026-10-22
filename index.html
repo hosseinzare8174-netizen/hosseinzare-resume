@@ -1256,24 +1256,23 @@ body.modal-open {
 
 	<!-- مودال مشاهده پروژه‌ها -->
 <div id="projects-modal" class="modal-overlay">
-    <div class="projects-modal-panel">
-        <button id="close-projects" class="modal-close" aria-label="بستن">&times;</button>
+    <div class="modal-content projects-content">
+        <button class="modal-close" id="close-projects" aria-label="بستن">&times;</button>
         
-        <div class="projects-modal-header">
-            <h2 class="modal-title" style="font-size: 1.8rem; color: #fff; margin-bottom: 8px;">پروژه‌های من</h2>
-            <p class="modal-subtitle" style="color: #b0b0b0; font-size: 0.95rem;">لیست سیستم‌ها، ابزارها و زیرساخت‌های توسعه‌یافته در صنعت و نرم‌افزار</p>
-        </div>
+        <h2 class="modal-title">پروژه‌های من</h2>
+        <p class="modal-subtitle">لیست برخی از پروژه‌ها و سیستم‌های توسعه‌یافته</p>
         
-        <div class="projects-modal-grid">
+        <div class="projects-grid">
             <!-- پروژه اول -->
-            <div class="modal-project-card">
-                <div class="modal-project-img-wrapper">
-                    <img src="photo28468362793.jpg" alt="سامانه حضور و غیاب و حقوق دستمزد" class="modal-project-img" onerror="this.src='profile_optimized.jpg';">
+            <div class="project-card">
+                <div class="project-image-wrapper">
+                    <img src="photo28468362793.jpg" alt="سامانه حضور و غیاب و حقوق دستمزد" class="project-image">
+                    <span class="project-badge">Laravel & Filament</span>
                 </div>
-                <div class="modal-project-content">
-                    <h3 class="modal-project-title">سامانه حضور و غیاب و حقوق دستمزد</h3>
-                    <p class="modal-project-desc">سیستم تحت وب برای مدیریت پرسنل، شیفت‌های کاری و محاسبه حقوق و دستمزد با پشتیبانی کامل از تاریخ شمسی.</p>
-                    <div class="modal-tech-tags">
+                <div class="project-info">
+                    <h3>سامانه حضور و غیاب و حقوق دستمزد</h3>
+                    <p>سیستم تحت وب برای مدیریت پرسنل، شیفت‌های کاری و محاسبه حقوق و دستمزد با پشتیبانی کامل از تاریخ شمسی.</p>
+                    <div class="project-tech">
                         <span>PostgreSQL</span>
                         <span>Jalali Calendar</span>
                         <span>Filament PHP</span>
@@ -1282,14 +1281,15 @@ body.modal-open {
             </div>
 
             <!-- پروژه دوم -->
-            <div class="modal-project-card">
-                <div class="modal-project-img-wrapper" style="display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,0.3);">
-                    <span style="color: #cda256; font-weight: bold; font-size: 1.1rem;">.NET 8.0 Background Service</span>
+            <div class="project-card">
+                <div class="project-image-wrapper">
+                    
+                    <span class="project-badge">.NET 8.0</span>
                 </div>
-                <div class="modal-project-content">
-                    <h3 class="modal-project-title">سرویس همگام‌سازی DeviceSync</h3>
-                    <p class="modal-project-desc">سرویس پیش‌زمینه جهت ارتباط مستقیم با دستگاه‌های حضور و غیاب بیومتریک و همگام‌سازی ۱۵ دقیقه‌ای داده‌ها با MySQL.</p>
-                    <div class="modal-tech-tags">
+                <div class="project-info">
+                    <h3>سرویس همگام‌سازی DeviceSync</h3>
+                    <p>سرویس پیش‌زمینه جهت ارتباط مستقیم با دستگاه‌های حضور و غیاب بیومتریک و همگام‌سازی ۱۵ دقیقه‌ای داده‌ها با MySQL.</p>
+                    <div class="project-tech">
                         <span>zkemkeeper</span>
                         <span>MySQL</span>
                         <span>C# / .NET 8</span>
@@ -1298,14 +1298,15 @@ body.modal-open {
             </div>
 
             <!-- پروژه سوم -->
-            <div class="modal-project-card">
-                <div class="modal-project-img-wrapper">
-                    <img src="factoryDashboard.png" alt="داشبورد مدیریت صنعتی" class="modal-project-img" onerror="this.src='profile_optimized.jpg';">
+            <div class="project-card">
+                <div class="project-image-wrapper">
+                    <img src="factoryDashboard.png" alt="داشبورد مدیریت صنعتی" class="project-image">
+                    <span class="project-badge">React & Neon UI</span>
                 </div>
-                <div class="modal-project-content">
-                    <h3 class="modal-project-title">داشبورد مدیریت و مانیتورینگ صنعتی</h3>
-                    <p class="modal-project-desc">داشبورد با کارایی بالا، آیکون‌های SVG سفارشی و طراحی نئونی مدرن برای نظارت بر خطوط تولید کارخانه کاشی.</p>
-                    <div class="modal-tech-tags">
+                <div class="project-info">
+                    <h3>داشبورد مدیریت و مانیتورینگ صنعتی</h3>
+                    <p>داشبورد با کارایی بالا، آیکون‌های SVG سفارشی و طراحی نئونی مدرن برای نظارت بر خطوط تولید کارخانه کاشی.</p>
+                    <div class="project-tech">
                         <span>Vite / TS</span>
                         <span>Performance Tuning</span>
                         <span>Neon Style</span>
@@ -1314,81 +1315,93 @@ body.modal-open {
             </div>
 
             <!-- پروژه چهارم -->
-            <div class="modal-project-card">
-                <div class="modal-project-img-wrapper" style="display: flex; align-items: center; justify-content: center; background: rgba(0,0,0,0.3);">
-                    <span style="color: #cda256; font-weight: bold; font-size: 1rem;">Network Infrastructure</span>
+            <div class="project-card">
+                <div class="project-image-wrapper">
+                    
+                    <span class="project-badge">Network Infrastructure</span>
                 </div>
-                <div class="modal-project-content">
-                    <h3 class="modal-project-title">زیرساخت شبکه و امنیت صنعتی</h3>
-                    <p class="modal-project-desc">طراحی و اجرای شبکه کارخانه با استفاده از تجهیزات میکروتیک، مدیریت متمرکز وایرلس و سویچینگ سیسکو همراه با سیستم VoIP.</p>
-                    <div class="modal-tech-tags">
+                <div class="project-info">
+                    <h3>زیرساخت شبکه و امنیت صنعتی</h3>
+                    <p>طراحی و اجرای شبکه کارخانه با استفاده از تجهیزات میکروتیک، مدیریت متمرکز وایرلس و سویچینگ سیسکو همراه با سیستم VoIP.</p>
+                    <div class="project-tech">
                         <span>MikroTik CAPsMAN</span>
                         <span>Cisco Catalyst</span>
                         <span>VoIP</span>
                     </div>
                 </div>
             </div>
-            
-            <!-- پروژه پنجم -->
-            <div class="modal-project-card">
-                <div class="modal-project-img-wrapper">
-                    <img src="KGS_Full_Dashboard.png" alt="سامانه پایش موتورخانه و بویلرها" class="modal-project-img" onerror="this.src='profile_optimized.jpg';">
+			
+			            <!-- پروژه پنجم -->
+            <div class="project-card">
+                <div class="project-image-wrapper">
+                    <img src="KGS_Full_Dashboard.png" alt="داشبورد مدیریت صنعتی" class="project-image">
+                    <span class="project-badge">React & Neon UI</span>
                 </div>
-                <div class="modal-project-content">
-                    <h3 class="modal-project-title">سامانه پایش موتورخانه و بویلرها</h3>
-                    <p class="modal-project-desc">داشبورد هوشمند برای کنترل و مانیتورینگ موتورخانه صنعتی با امکان مشاهده وضعیت بویلرها، دما، فشار، پمپ‌ها و هشدارهای عملیاتی در لحظه.</p>
-                    <div class="modal-tech-tags">
-                        <span>React</span>
-                        <span>Vite</span>
-                        <span>TypeScript</span>
-                        <span>Industrial UI</span>
+                <div class="project-info">
+                    <h3>سامانه پایش موتورخانه و بویلرها</h3>
+                    <p> داشبورد هوشمند برای کنترل و مانیتورینگ موتورخانه صنعتی با امکان
+                 مشاهده وضعیت بویلرها، دما، فشار، پمپ‌ها و هشدارهای عملیاتی در لحظه.</p>
+                    <div class="project-tech">
+                         <span>React</span>
+                         <span>Vite</span>
+                         <span>TypeScript</span>
+                         <span>Industrial UI</span>
                     </div>
                 </div>
             </div>
-            
-            <!-- پروژه ششم -->
-            <div class="modal-project-card">
-                <div class="modal-project-img-wrapper" style="display: grid; grid-template-columns: 1fr 1fr; height: 160px;">
-                    <img src="sarvtile.png" alt="SARV TILE نمای اول" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.src='profile_optimized.jpg';">
-                    <img src="sarvtile2.png" alt="SARV TILE نمای دوم" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.src='profile_optimized.jpg';">
+			
+			            <!-- پروژه ششم -->
+            <div class="project-card">
+                <div class="project-image-wrapper">
+                    <img src="sarvtile.png" alt="داشبورد مدیریت صنعتی" class="project-image">
+					<img src="sarvtile2.png" alt="داشبورد مدیریت صنعتی" class="project-image">
+                    <span class="project-badge">site</span>
                 </div>
-                <div class="modal-project-content">
-                    <h3 class="modal-project-title">SARV TILE / کاشی سرو</h3>
-                    <p class="modal-project-desc">طراحی و توسعه یک تجربه دیجیتال سینمایی برای معرفی فرآیند تولید کاشی با صحنه‌های مستقل و تعاملی از فرمولاسیون تا پخت.</p>
-                    <div class="modal-tech-tags">
-                        <span>React</span>
-                        <span>Three.js</span>
-                        <span>WebGPU</span>
-                        <span>Framer Motion</span>
-                    </div>
-                </div>
-            </div>
-
-            <!-- پروژه هفتم: Orion SCADA (گالری ۵ تصویره) -->
-            <div class="modal-project-card" style="grid-column: span 2;">
-                <div class="modal-project-img-wrapper" style="height: auto; display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; padding: 6px; background: rgba(0,0,0,0.4);">
-                    <img src="factoryDashboard.png" alt="داشبورد Orion - نمای کلی" class="modal-project-img" style="height: 110px; border-radius: 4px; object-fit: cover;" onerror="this.src='profile_optimized.jpg';">
-                    <img src="factoryDashboard2.png" alt="داشبورد Orion - سیلوها" class="modal-project-img" style="height: 110px; border-radius: 4px; object-fit: cover;" onerror="this.src='profile_optimized.jpg';">
-                    <img src="factoryDashboard3.png" alt="داشبورد Orion - هشدارها و شبکه" class="modal-project-img" style="height: 110px; border-radius: 4px; object-fit: cover;" onerror="this.src='profile_optimized.jpg';">
-                    <img src="factoryDashboard4.png" alt="داشبورد Orion - تله‌متری" class="modal-project-img" style="height: 110px; border-radius: 4px; object-fit: cover;" onerror="this.src='profile_optimized.jpg';">
-                    <img src="factoryDashboard5.png" alt="داشبورد Orion - روند تولید" class="modal-project-img" style="grid-column: span 2; height: 110px; border-radius: 4px; object-fit: cover;" onerror="this.src='profile_optimized.jpg';">
-                </div>
-                <div class="modal-project-content">
-                    <h3 class="modal-project-title">ORION / سامانه مانیتورینگ صنعتی و اسکادا</h3>
-                    <p class="modal-project-desc">پلتفرم جامع بلادرنگ برای نظارت بر خطوط تولید کارخانه کاشی و سرامیک. این سیستم شامل تله‌متری زنده موتورها، پایش تناژ و سطح سیلوهای مواد اولیه، مانیتورینگ شبکه PLC، مدیریت هشدارهای بحرانی و نقشه ایزومتریک فرآیند تولید از سنگ‌شکن تا بسته‌بندی است.</p>
-                    <div class="modal-tech-tags">
-                        <span>React</span>
-                        <span>TypeScript</span>
-                        <span>SCADA & PLC</span>
-                        <span>Industrial UI</span>
-                        <span>Real-time Data</span>
+                <div class="project-info">
+                    <h3>SARV TILE / کاشی سرو </h3>
+                    <p>   طراحی و توسعه یک تجربه دیجیتال سینمایی برای معرفی فرآیند تولید کاشی. 
+            در این پروژه، هر مرحله از تولید (فرمولاسیون مواد، پرس دقیق، لعاب‌کاری و پخت) 
+            به یک صحنه مستقل و تعاملی تبدیل شده است. هدف، روایت داستان محصولی است 
+            که در کنار زیبایی بصری، از نظر مهندسی و دوام نیز قابل اعتماد است.</p>
+                    <div class="project-tech">
+                            <span>React</span>
+                            <span>Three.js</span>
+                            <span>WebGPU</span>
+                            <span>Framer Motion</span>
                     </div>
                 </div>
             </div>
 
+<!-- پروژه هفتم: Orion SCADA -->
+<div class="modal-project-card">
+    <div class="modal-project-img-wrapper" style="height: auto; display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px; padding: 8px;">
+        <img src="factoryDashboard.png" alt="داشبورد Orion - نمای کلی" class="modal-project-img" style="height: 120px; border-radius: 4px;">
+        <img src="factoryDashboard2.png" alt="داشبورد Orion - سیلوها" class="modal-project-img" style="height: 120px; border-radius: 4px;">
+        <img src="factoryDashboard3.png" alt="داشبورد Orion - هشدارها و شبکه" class="modal-project-img" style="height: 120px; border-radius: 4px;">
+        <img src="factoryDashboard4.png" alt="داشبورد Orion - تله‌متری" class="modal-project-img" style="height: 120px; border-radius: 4px;">
+        <img src="factoryDashboard5.png" alt="داشبورد Orion - روند تولید" class="modal-project-img" style="grid-column: span 2; height: 120px; border-radius: 4px;">
+    </div>
+    <div class="modal-project-content">
+        <h3 class="modal-project-title">ORION / سامانه مانیتورینگ صنعتی و اسکادا</h3>
+        <p class="modal-project-desc">پلتفرم جامع بلادرنگ برای نظارت بر خطوط تولید کارخانه کاشی و سرامیک. این سیستم شامل تله‌متری زنده موتورها، پایش تناژ و سطح سیلوهای مواد اولیه، مانیتورینگ شبکه PLC، مدیریت هشدارهای بحرانی و نقشه ایزومتریک فرآیند تولید از سنگ‌شکن تا بسته‌بندی است.</p>
+        <div class="modal-tech-tags">
+            <span>React</span>
+            <span>TypeScript</span>
+            <span>SCADA & PLC</span>
+            <span>Industrial UI</span>
+            <span>Real-time Data</span>
         </div>
     </div>
 </div>
+
+
+			
+			
+			
+			
+        </div>
+    </div> 
+
 
 </div>
 
